@@ -1,0 +1,72 @@
+$paddings: 20px;
+$min-width: 320px;
+$base-wrapp: 1410px;
+$max-width: calc(#{$base-wrapp} + #{$paddings} * 2);
+$base-bg: #F5F5F5;
+$base-font-size: 1rem;
+$base-line-height: 1.75rem;
+$base-font-family: "Proxima Nova", "Open Sans", Arial, sans-serif;
+$custom-font-family: "Tovari Sans", sans-serif;
+$default-transition: all 0.4s linear;
+$trs: all 0.3s linear;
+$trs-wow: all 1s linear;
+
+$shadow: 2px 6px 20px rgba(0, 164, 91, 0.25);
+$shadow_light: 2px 6px 20px rgba(0, 164, 91, 0.10);
+
+//breakpoints
+$xs: 567px;
+$sm: 767px;
+$md: 991px;
+$lg: 1279px;
+$xl: 1435px;
+
+/* main variables */
+
+$col-1: #1E1E1E;
+$col-2: #DF0F0F;
+$col-3: #F5F5F5;
+$col-4: #fff;
+$col-5: #161616;
+$col-6: #bbbbbb;
+$col-7: #7e7e7e;
+
+$bg-1:rgba(#fff, .1);
+
+$bd: rgba(187, 187, 187, 0.5);
+
+//text, titles
+$text-color: #353535;
+$t-col-2: #fff;
+$t-col-3: #1C1B1B;
+$t-col-4: $col-5;
+$title-main-color: #1C1B1B;
+$title-color: #fff;
+
+
+$font-size-h1: 36px;
+$line-height-h1: 49px;
+$font-size-h2: 36px;
+$line-height-h2: 49px;
+$font-size-h3: 36px;
+$line-height-h3: 49px;
+$font-size-h4: 18px;
+$line-height-h4: 24px;
+
+$f-s-xs: 14px;   
+$lh-xs: 14px;   
+$f-s-sm: 16px;   
+$lh-sm: 22px;   
+$f-s-md: 28px;   
+$lh-md: 38px;
+$f-s-lg: 30px;  
+$lh-lg: 30px;  
+
+$f-s-big-xs: 34px;
+$f-s-big-sm: 40px;
+$f-s-big-md: 50px;
+$lh-big-md: 62px;
+$f-s-big-lg: 100px;
+$lh-big-lg: 110px;
+$f-s-big-xl: 110px;
+$lh-big-xl: 90px;

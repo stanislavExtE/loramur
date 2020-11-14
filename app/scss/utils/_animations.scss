@@ -1,0 +1,72 @@
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes showHint{
+    0%{
+        z-index: 2;
+        visibility: visible;
+    }
+    
+    50%{ 
+        opacity: 0;
+        z-index: 2;
+        visibility: visible;
+    }
+    to{
+        opacity: 1;
+        z-index: 2;
+        visibility: visible;
+    }
+}
+
+@keyframes fade_anim {
+  0% {
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes blink{
+
+  48%{
+    opacity: 1;
+  }
+  50%{
+    opacity: .2;
+  }
+  52%{
+    opacity: 1;
+  }
+}
+
+@keyframes zoom{
+
+  0%{
+    transform: scale(.7);
+    opacity: 0;
+  }
+  
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes change_color{
+  18%{
+    color: $text-color;
+  }
+  
+  20%{
+    color: $col-1;
+  }
+  22% {
+    color: $text-color;
+  }
+}

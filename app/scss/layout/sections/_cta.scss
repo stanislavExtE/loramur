@@ -1,0 +1,457 @@
+.cta {
+    position: relative;
+    z-index: 2;
+
+
+    &-section {
+        background: #353535 url(../img/cta-bg-1.png) no-repeat center 30% / cover;
+        padding: 90px 0;
+        color: $t-col-2;
+        transition: background-position .1s;
+        position: relative;
+
+
+        &_has-feets {
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &::before {
+                @include i-extend(cat-foot);
+                position: absolute;
+                font-size: 370px;
+                color: #ffffff;
+                z-index: 2;
+                left: 0;
+                bottom: 0;
+                transform: translate(-27%, 21%) rotate(54deg);
+            }
+
+            &:after {
+                @include i-extend(cat-foot);
+                position: absolute;
+                font-size: 155px;
+                color: #ffffff;
+                z-index: 2;
+                top: 0;
+                right: 0;
+                transform: translate(29%, -26%) rotate(231deg);
+            }
+        }
+    }
+
+    &__content {
+        max-width: 800px;
+        margin: 0px auto;
+
+        &_has-arrow {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                left: 100%;
+                width: 100px;
+                top: 0;
+                background: url(../img/cta-arrow.svg) no-repeat center / contain;
+            }
+        }
+    }
+
+    &__title{
+        padding-bottom: 10px;
+    }
+
+    &-caption {
+        max-width: 680px;
+        margin-bottom: 15px;
+    }
+
+    &-form {
+
+        &__content {
+            padding-top: 23px;
+            padding-bottom: 17px;
+        }
+    }
+
+    &__input-row {
+        margin: 0px auto;
+    }
+}
+
+.inform-cta {
+    color: $t-col-2;
+
+    &-section {
+        position: relative;
+        padding: 110px 0px 120px;
+        background: #ffffff;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            display: block;
+            width: 77%;
+            height: 100%;
+            background: linear-gradient(113.5deg, #FF2929 2.41%, #CE0C0C 65.15%);
+        }
+
+        @include br-p(992px, min) {
+            &:before{
+                will-change: width;
+                width: 0%;
+                transition: width .5s .5s;
+            }
+            
+            &.animated:before{
+                width: 77%;
+            }
+        }
+    }
+
+    &__info {
+        max-width: 65%;
+        position: relative;
+        z-index: 2;
+        padding-top: 60px;
+    }
+
+    &__caption {
+        font-weight: bold;
+        font-size: 30px;
+        position: relative;
+        padding-left: 60px;
+        margin-bottom: 20px;
+        font-family: $custom-font-family;
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            border-radius: 4px;
+            width: 42px;
+            height: 4px;
+            top: 0.39em;
+            left: 0;
+            background: #ffffff;
+        }
+    }
+
+    &__title {
+        padding: 50px 0;
+        font-weight: bold;
+        font-size: 220px;
+        line-height: 0.6;
+        font-family: $custom-font-family;
+    }
+
+    &__text {
+        max-width: 70%;
+        margin-bottom: 14px;
+    }
+
+    &__input-row{
+        padding: 60px 0;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        background: url(../img/inform-img.jpg) no-repeat center / 120%;
+        transition: all .1s;
+
+        &-box {
+            position: absolute;
+            left: 91%;
+            top: 0;
+            width: 71%;
+            height: 113%;
+            z-index: -1;
+        }
+    }
+
+    &__social-caption{
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@include br-p($xl) {
+
+    .inform-cta__img-box{
+        width: 60%;
+        height: 100%;
+    }
+
+    .inform-cta__title{
+        font-size: 200px;
+    }
+}
+
+@include br-p($lg) {
+
+
+    .cta-section{
+
+
+        &_has-feets{
+
+
+            &::before{
+                font-size: 280px;
+            }
+        }
+    }
+
+    .inform-cta__img-box {
+        width: 420px;
+    height: 575px;
+        top: 25%;
+        left: calc(100% - 80px);
+    }
+
+    .inform-cta__title{
+        font-size: 150px;
+
+    }
+
+    .input-row_flex{
+        flex-direction: column;
+        align-items: flex-start;
+
+        .input-box{
+            width: 100%;
+        }
+
+        .btn{
+            margin-left: 0;
+        }
+    }
+    
+
+}
+
+@include br-p($md) {
+
+    
+
+    .cta-section{
+
+
+        &_has-feets{
+
+
+            &::before{
+                font-size: 180px;
+                transform: translate(-35%, 30%) rotate(54deg);
+            }
+
+            &:after{
+                font-size: 100px;
+            }
+        }
+    }
+
+    .cta__content_has-arrow{
+        padding: 0px 60px;
+
+        &:after{
+            right: 0;
+            left: auto;
+            width: 75px;
+        }
+    }
+
+    .cta__title{
+        font-size: 60px;
+    }
+
+
+
+    .inform-cta__info{
+        max-width: 75%;
+    }
+
+
+    .inform-cta-section{
+        padding: 80px 0px 90px;
+                
+        &:before{
+            width: 82%;
+        }
+    }
+
+    .inform-cta__title{
+        font-size: 135px;
+
+    }
+
+    .inform-cta__img-box{
+        width: 300px;
+        height: 400px;
+        top: 18%;
+        left: calc(80%);
+    }
+}
+
+@include br-p($sm) {
+
+    .cta-section{
+        padding: 80px 0;
+        background-size: auto 109%;
+    }
+    .cta-section_has-feets::before{
+        font-size: 150px;
+    }
+
+    .cta__title{
+        font-size: 48px;
+    }
+
+    .inform-cta-section{
+        padding: 50px 0px 60px;
+        overflow-x: hidden;
+        &:before{
+            width: 87%;
+        }
+    }
+
+    .input-row .input-box{
+        margin-bottom: 25px;
+    }
+
+    .input-row_flex .input-box{
+        margin-bottom: 0;
+    }
+
+    .input-row .btn{
+        position: static;
+    }
+
+    .inform-cta__info{
+        max-width: 85%;
+        padding-top: 50px;
+    }
+
+    .inform-cta__title {
+        font-size: 110px;
+        padding: 25px 0;
+    }
+
+    .inform-cta__text{
+        font-size: 14px;
+    }
+
+    .inform-cta__img-box {
+        width: 210px;
+        height: 260px;
+        top: 28%;
+        left: calc(72%);
+    }
+}
+
+@include br-p($xs) {
+    .inform-cta-section{
+        padding: 30px 0px 40px;
+    }
+
+    .inform-cta__info{
+        padding-top: 35px;
+    }
+
+    .inform-cta__caption{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .inform-cta__title {
+        font-size: 84px;
+        padding: 25px 0;
+    }
+
+    .inform-cta__img-box{
+        width: 180px;
+        height: 220px;
+    }
+
+    .inform-cta__input-row{
+        padding: 20px 0 30px;
+    }
+
+    .inform-cta__social-caption{
+        margin-bottom: 20px;
+    }
+}
+
+@include br-p(419px) {
+    .cta-section{
+        padding: 40px 0;
+    }
+
+
+    .cta__content_has-arrow{
+        padding: 0;
+        &:after{
+            content: none;
+        }
+    }
+
+
+    .inform-cta-section{
+        padding: 30px 0px 40px;
+        &:before{
+            width: 100%;
+        }
+    }
+
+    .input-row_flex{
+        align-items: center;
+    }
+
+    .inform-cta__info{
+        max-width: 100%;
+    }
+
+    .inform-cta__text{
+        max-width: 100%;
+    }
+    .inform-cta__social-caption{
+        text-align: center;
+    }
+
+    .inform-cta__social-box{
+        justify-content: center;
+    }
+
+    .inform-cta__social-caption{
+        margin-bottom: 15px;
+    }
+
+
+    .inform-cta__img-box{
+        display: none;
+    }
+
+    .inform-cta__img{
+        background: none;
+    }
+}

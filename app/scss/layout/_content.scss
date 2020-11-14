@@ -1,0 +1,40 @@
+
+//main styles
+@import "sections/_intro";
+@import "sections/_inform";
+@import "sections/_cta";
+@import "sections/_gallery";
+@import "sections/_catalog";
+@import "sections/_posts";
+@import "sections/_reviews";
+@import "sections/_delivery";
+@import "sections/_404";
+
+
+
+
+
+
+
+
+@include br-p($xl) {
+    
+}
+
+@include br-p($lg) {
+
+}
+@include br-p($md) {
+
+}
+@include br-p($sm) {
+
+}
+
+@include br-p($xs) {
+
+}
+
+@include br-p(419px) {
+
+}
